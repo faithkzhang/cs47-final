@@ -1,0 +1,6 @@
+import { Webview } from "react-native-webview";
+
+export default function NextScreen({ route }) {
+  const { webview } = route.params;
+  return <Webview source={{ uri: webview }}></Webview>;
+}
